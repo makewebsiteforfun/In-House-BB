@@ -1,0 +1,58 @@
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-image: url('R (2).jpeg');
+background-size: cover;
+}
+
+.menu {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff; /* Add this line to make the background white */
+}
+
+.items {
+display: flex;
+flex-wrap: wrap;
+}
+
+.item {
+width: 30%;
+margin: 10px;
+border: 1px solid #ccc;
+padding: 10px;
+cursor: pointer;
+}
+
+.item img {
+width: 100%;
+height: auto;
+}
+
+.options {
+margin-top: 10px;
+}
+
+button {
+margin-top: 10px;
+padding: 5px 10px;
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+.order-details {
+margin-top: 20px;
+}
+
+.order-details h2 {
+margin-bottom: 10px;
+}

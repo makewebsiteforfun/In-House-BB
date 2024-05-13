@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="menu">
+  <h1> In House Guest Restaurant Menu</h1>
+  <div class="items">
+    <div class="item" onclick="showOptions('Omelette')">
+      <img src="OIP.jpeg" alt="Omelette">
+      <div class="options" id="omeletteOptions" style="display: none;">
+        <h2>Omelette</h2>
+        <p>Choose your options:</p>
+        <label for="filling_omelette">Filling:</label>
+        <select id="filling_omelette">
+          <option value="plain">Plain</option>
+          <option value="mushroom">Mushroom</option>
+          <option value="cheese">Cheese</option>
+          <option value="cheese,vegetables,muchroom">cheese,vegetables,muchroom</option>
+        </select>
+        <label for="quantity_omelette">Quantity:</label>
+        <input type="number" id="quantity_omelette" value="1" min="1">
+        <button onclick="addToCart('Omelette')">Add to my order</button>
+      </div>
+    </div>
+
+    <div class="item" onclick="showOptions('Foul')">
+      <img src="foul.jpeg" alt="Foul">
+      <div class="options" id="foulOptions" style="display: none;">
+        <h2>Foul</h2>
+        <p>Choose your options:</p>
+        <label for="sauce_foul">Sauce:</label>
+        <select id="sauce_foul">
+          <option value="tahini">Tahini</option>
+          <option value="hot_sauce">Hot Sauce</option>
+          <option value="garlic">Garlic</option>
+        </select>
+        <label for="quantity_foul">Quantity:</label>
+        <input type="number" id="quantity_foul" value="1" min="1">
+        <button onclick="addToCart('Foul')">Add to my order</button>
+      </div>
+    </div>
+
+    <div class="item" onclick="showOptions('Shakshuka')">
+      <img src="Shakshuka-allinall.jpg" alt="Shakshuka">
+      <div class="options" id="shakshukaOptions" style="display: none;">
+        <h2>Shakshuka</h2>
+        <p>Choose your options:</p>
+        <label for="spiciness_shakshuka">Spiciness Level:</label>
+        <select id="spiciness_shakshuka">
+          <option value="mild">not spicy</option>
+          <option value="medium">Medium</option>
+          <option value="hot">Hot</option>
+        </select>
+        <label for="quantity_shakshuka">Quantity:</label>
+        <input type="number" id="quantity_shakshuka" value="1" min="1">
+        <button onclick="addToCart('Shakshuka')">Add to my order</button>
+      </div>
+    </div>
+
+    <div class="item" onclick="showOptions('Pancake')">
+      <img src="R.jpeg" alt="Pancake">
+      <div class="options" id="pancakeOptions" style="display: none;">
+        <h2>Pancake</h2>
+        <p>Choose your options:</p>
+        <label for="topping_pancake">Topping:</label>
+        <select id="topping_pancake">
+          <option value="maple_syrup">Maple Syrup</option>
+          <option value="nutella">nutella</option>
+          <option value="berries">Berries</option>
+          <option value="all the above">all the above</option>
+        </select>
+        <label for="quantity_pancake">Quantity:</label>
+        <input type="number" id="quantity_pancake" value="1" min="1">
+        <button onclick="addToCart('Pancake')">Add to my order</button>
+      </div>
+    </div>
+    
+    <div class="item" onclick="showOptions('Falafel')">
+        <img src="OIP (2).jpeg" alt="Falafel">
+        <div class="options" id="falafelOptions" style="display: none;">
+          <h2>Falafel</h2>
+          <p>Choose your options:</p>
+          <label for="sauce_falafel">Sauce:</label>
+          <select id="sauce_falafel">
+            <option value="tahini">Tahini</option>
+          </select>
+          <label for="quantity_falafel">Quantity:</label>
+          <input type="number" id="quantity_falafel" value="1" min="1">
+          <button onclick="addToCart('Falafel')">Add to my order</button>
+        </div>
+      </div>
+
+    <div class="item" onclick="showOptions('boiledeggs')">
+        <img src="OIP (1).jpeg" alt="boiledeggs">
+        <div class="options" id="boiledeggsOptions" style="display: none;">
+          <h2>Boiled eggs</h2>
+          <p>Choose your options:</p>
+          <label for="doneness_boiledeggs">sides:</label>
+          <select id="doneness_boiledeggs">
+            <option value="hash brown">hash brown</option>
+            <option value="sausage">sausage </option>
+            <option value="muchroom">muchroom</option>
+          </select>
+          <label for="quantity_boiledeggs">Quantity:</label>
+          <input type="number" id="quantity_boiledeggs" value="1" min="1">
+          <button onclick="addToCart('boiledeggs')">Add to my order</button>
+        </div>
+      </div>
+
+      <div class="item" onclick="showOptions('scrambleeggs')">
+        <img src="OIP (3).jpeg" alt="scrambleeggs">
+        <div class="options" id="scrambleeggsOptions" style="display: none;">
+          <h2>Scramble eggs</h2>
+          <p>Choose your options:</p>
+      <div class="item" onclick="showOptions('scrambleeggs')">
+          <label for="extras_scrambleeggs">Topping:</label>
+          <select id="extras_scrambleeggs">
+            <option value="well done">well done</option>
+            <option value="medium"> medium</option>
+            <option value="salmon">salmon</option>
+            <option value="vegetables">vegetables</option>
+          </select>
+          <label for="quantity_scrambleeggs">Quantity:</label>
+          <input type="number" id="quantity_scrambleeggs" value="1" min="1">
+          <button onclick="addToCart('scrambleeggs')">Add to my order</button>
+        </div>
+      </div>
+  </div>
+  <div class="item" onclick="showOptions('tea')">
+    <img src="OIP (4).jpeg" alt="tea">
+    <div class="options" id="teaOptions" style="display: none;">
+      <h2>TEA</h2>
+      <p>Choose your options:</p>
+      <label for="kind_tea">Topping:</label>
+      <select id="kind_tea">
+        <option value="Jasmin">Jasmin with food</option>
+        <option value="Jasmin">Jasmin after food</option>
+        <option value="Jasmin">Jasmin before food</option>
+        <option value="Eng Breakfast"> Eng Breakfast with food</option>
+        <option value="Eng Breakfast"> Eng Breakfast  after food</option>
+        <option value="Eng Breakfast"> Eng Breakfast</option>
+        <option value="Early grey">Early grey with food</option>
+        <option value="Early grey">Early grey  after food</option>
+        <option value="Early grey">Early grey before food</option>
+      </select>
+      <label for="quantity_tea">Quantity:</label>
+      <input type="number" id="quantity_tea" value="1" min="1">
+  <button onclick="addToCart('tea')">Add to my order</button>
+    </div>
+  </div>
+  <div class="item" onclick="showOptions('coffee')">
+    <img src="OIP (5).jpeg" alt="coffee">
+    <div class="options" id="coffeeOptions" style="display: none;">
+      <h2>COFFEE</h2>
+      <p>Choose your options:</p>
+      <label for="type_coffee">Topping:</label>
+      <select id="type_coffee">
+        <option value="cappucino">cappucino before food</option>
+        <option value="caffee latte"> caffee latte before food</option>
+        <option value="espresso ">espresso before food</option>
+        <option value="cappucino">cappucino after food</option>
+        <option value="caffee latte"> caffee latte after food</option>
+        <option value="espresso ">espresso after food</option>
+        <option value="cappucino">cappucino with food</option>
+        <option value="caffee latte"> caffee latte with food</option>
+        <option value="espresso ">espresso with food</option>
+      </select>
+      <label for="quantity_coffee">Quantity:</label>
+      <input type="number" id="quantity_coffee" value="1" min="1">
+  <button onclick="addToCart('coffee')">Add to my order</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="order-details" id="orderDetails" style="display: none;">
+  <h2>Your Order:</h2>
+  <ul id="orderList"></ul>
+</div>
+
+<script src="java.js"></script>
+
+</body>
+</html>
